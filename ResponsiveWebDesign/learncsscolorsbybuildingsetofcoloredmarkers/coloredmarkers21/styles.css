@@ -1,0 +1,22 @@
+/* styling the page */
+h1 {
+    text-align: center;
+}
+.container {
+    background-color: rgb(0, 0, 0);
+}
+.marker {
+    /* background-color: red; was to remove, I prefer commenting */
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+.one {
+    background-color: red;
+}
+.two {
+    background-color: green;
+}
+.three {
+    background-color: blue;
+}
