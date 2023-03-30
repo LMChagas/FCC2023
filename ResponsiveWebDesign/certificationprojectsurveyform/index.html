@@ -7,10 +7,52 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1 id="title">User Survey</h1>
-        <p id="description">This survey is for geting to know you better</p>
-        <form id="survey-form">
+        <div class="survey">
+            <h1 id="title" class="header">User Survey</h1>
+            <p id="description" class="header">This survey is for geting to know you better</p>
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="enter your name" required></label>
+                    <label for="email" id="email-label">email <input id="email" name="email" type="email" placeholder="enter your email" required></label>
+                    <label for="number" id="number-label">Years of programming experience(Optional) <input id="number" name="number" type="number" min="1" max="69" placeholder="enter how many years of experience you have"></label>
+                    <label for="dropdown" id="dropdown-label">What type of programmer do you want to be?
+                        <select id="dropdown" name="wannabe" required>
+                            <option disabled selected value>what you want to be</option>
+                            <option value="frontend">Frontend web developer</option>
+                            <option value="backend">Backend web developer</option>
+                            <option value="datasci">Data scientist</option>
+                            <option value="gamedev">Games Developer</option>
+                            <option value="other">Other</option>
+                        </select>
+                </fieldset>
+                </label>
+                <fieldset>
+                    <p>What IDE do you use for your projects?</p>
+                    <label><input name="IDE" value="vscode" type="radio" class="inline"> VS Code</label>
+                    <label><input name="IDE" value="eclipse" type="radio" class="inline"> Eclipse</label>
+                    <label><input name="IDE" value="netbeans" type="radio" class="inline"> NetBeans</label>
+                    <label><input name="IDE" value="other" type="radio" class="inline"> None of the above</label>
+                </fieldset>
+                <fieldset>
+                    <p>What programming languages do you intend to learn?</p>
+                    <label><input name="language" value="javascript" type="checkbox" class="inline"> Javascript</label>
+                    <label><input name="language" value="python" type="checkbox" class="inline"> Python</label>
+                    <label><input name="language" value="java" type="checkbox" class="inline"> Java</label>
+                    <label><input name="language" value="php" type="checkbox" class="inline"> PHP</label>
+                    <label><input name="language" value="c#" type="checkbox" class="inline"> C#</label>
+                    <label><input name="language" value="swift" type="checkbox" class="inline"> Swift</label>
+                    <label><input name="language" value="ruby" type="checkbox" class="inline"> Ruby</label>
+                    <label><input name="language" value="c++" type="checkbox"class="inline"> C++</label>
+                    <label><input name="language" value="rust" type="checkbox" class="inline"> Rust</label>
+                    <label><input name="language" value="pearl" type="checkbox" class="inline"> Pearl</label>
+                </fieldset>
+                <fieldset>
+                    <label>Anything to add or suggestions? <textarea name="suggestions" id="suggestions" placeholder="just hit me with anything..." class="suggestions"></textarea></label>
+                </fieldset>
+                <button id="submit" type="submit"> Submit </button>
+                            
 
-        </form>
+            </form>
+        </div>
     </body>
 </html>

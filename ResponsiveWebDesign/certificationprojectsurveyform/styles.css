@@ -1,0 +1,56 @@
+body {
+    background-image: url(https://www.tabnine.com/blog/wp-content/uploads/2021/08/dev-team.jpeg);
+    margin: 0 ;
+    font-family: Verdana;
+    color:#ff80aa;
+    background-position: center;
+}
+.survey {
+    background-color: aquamarine;
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+}
+.header {
+    text-align: center;
+    margin: 1em auto;
+}
+form {
+    margin: 0.5rem 0;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+}
+.suggestions {
+    min-height: 120px;
+    resize: vertical;
+}
+input, textarea {
+    background-color: #5df1f1;
+    border: 1px solid #5df1f1;
+    color: black;
+}
+button {
+    display: block;
+    width: 60%;
+    min-width: 200px;
+    background-color: red;
+    border: 0;
+    padding: 0.75rem;
+    margin: 1em auto;
+    font-size: 1.5em;
+
+}
